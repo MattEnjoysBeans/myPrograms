@@ -10,41 +10,63 @@ while True:
             user_placement += user_roll
             break
         else:
-            print("Invalid Number, Try Again!")
-        
+            print("Invalid Number, Try Again!")    
     
-    if user_placement == 9:
-        print("Landed on a ladder! Move up!")
-        user_placement += 25
-    elif user_placement == 40:
-        print("Landed on a ladder! Move up!")
-        user_placement += 24
-    elif user_placement == 67:
-        print("Landed on a ladder! Move up!")
-        user_placement += 19
-    elif user_placement == 54:
-        print("Landed on a snake! Move down!")
-        user_placement -= 35
-    elif user_placement == 90:
-        print("Landed on a snake! Move down!")
-        user_placement -= 42
-    elif user_placement == 99:
-        print("Landed on a snake! Move down!")
-        user_placement -= 22
-    elif user_placement > 100:
-        print("Too high! Didn't move!")
-        user_placement -= user_roll
-    elif user_placement == 100:
-        print("GG! You win!")
-        user_exit = input("Would you like to play again?: ")
-        if user_exit == "no":
-            break
-        else:
-            user_placement = 1
-            print("Welcome to Snakes and Ladders!")
-    if user_roll == 0:
-            print("Exitting game...")
-            break
+        if user_placement == 100
+            print("GG! You win!")
+            user_exit = input("Would you like to play again?: ")
+            if user_exit == "no":
+                break
+            else:
+                user_placement = 1
+                print("Welcome to Snakes and Ladders!")
+        elif user_placement > 100:
+            print("Too high! Didn't move!")
+            user_placement -= user_roll
+        elif user_placement < 100
+            game_dict = {
+                9 : 34
+                54 : 19
+                40 : 64
+                90 : 48
+                67 : 86
+                99 : 88
+            }
+
+        if user_placement in game_dict
+            user_placement = game_dict[user_placement]
+
+
+    
+    # if user_placement == 9:
+    #     print("Landed on a ladder! Move up!")
+    #     user_placement += 25
+    # elif user_placement == 40:
+    #     print("Landed on a ladder! Move up!")
+    #     user_placement += 24
+    # elif user_placement == 67:
+    #     print("Landed on a ladder! Move up!")
+    #     user_placement += 19
+    # elif user_placement == 54:
+    #     print("Landed on a snake! Move down!")
+    #     user_placement -= 35
+    # elif user_placement == 90:
+    #     print("Landed on a snake! Move down!")
+    #     user_placement -= 42
+    # elif user_placement == 99:
+    #     print("Landed on a snake! Move down!")
+    #     user_placement -= 22
+    # elif user_placement > 100:
+    #     print("Too high! Didn't move!")
+    #     user_placement -= user_roll
+    # elif user_placement == 100:
+    #     print("GG! You win!")
+    #     user_exit = input("Would you like to play again?: ")
+    #     if user_exit == "no":
+    #         break
+    #     else:
+    #         user_placement = 1
+    #         print("Welcome to Snakes and Ladders!")
 
     
 
